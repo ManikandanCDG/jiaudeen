@@ -15,7 +15,7 @@ $(document).ready(function () {
         // 3d-files/walmart_samples.glb
         $('.glb_file').html(
             `
-            <model-viewer id="dimension-demo" ar ar-modes="webxr" ar-scale="fixed" camera-orbit="-30deg auto auto" shadow-intensity="1" camera-controls src="assets/` + file +`" auto-rotate-delay="0" alt="A 3D model of an armchair." disable-pan="true" interaction-prompt="none" rotation-per-second="15deg" animation-canceling="none">
+            <model-viewer id="dimension-demo" ar ar-modes="webxr" ar-scale="fixed" camera-orbit="-30deg auto auto" shadow-intensity="1" camera-controls src="assets/` + file +`" auto-rotate-delay="0" alt="A 3D model of an armchair." disable-pan="true" interaction-prompt="none" rotation-per-second="15deg" animation-canceling="none" exposure="0.7">
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
                 </div>
@@ -80,4 +80,7 @@ $(document).ready(function () {
     });
 });
 
-const carousel = new bootstrap.Carousel('#carouselExampleIndicators');
+const carousel = new bootstrap.Carousel('#carouselExampleIndicators', {
+  interval: false,
+  ride: false
+});
