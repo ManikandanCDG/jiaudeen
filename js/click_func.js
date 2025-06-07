@@ -78,6 +78,10 @@ $(document).ready(function () {
             // console.log('Checkbox is not checked');
         }
     });
+
+    $("body").on("click", ".btn-close", function(){
+        $("#myModal").modal("hide");
+    })
 });
 
 const carousel = new bootstrap.Carousel('#carouselExampleIndicators', {

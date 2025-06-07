@@ -472,11 +472,19 @@ button:focus {
     height: 700px;
 }
 
+#myModal{
+  margin-top: 50px;
+}
+
 @media (max-width: 768px) {
     #dimension-demo {
       text-align: center;
       width: 100%;
       height: 300px;
+  }
+
+  #myModal{
+    margin-top: 0px;
   }
 }
 
